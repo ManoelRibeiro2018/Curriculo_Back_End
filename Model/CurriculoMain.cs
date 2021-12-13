@@ -11,5 +11,17 @@ namespace Curriculo.Model
         public User User { get; set; }
         public List<Experience> Experiences { get; set; }
         public List<Hobby>  Hobbies { get; set; }
+
+        public CurriculoMain(string title, User user, List<Experience> experiences, List<Hobby> hobbies)
+        {
+            Title = title;
+            User = user;
+            Experiences = experiences;
+            Hobbies = hobbies;
+        }
+
+        public CurriculoMain()
+        {
+        }
     }
 }
